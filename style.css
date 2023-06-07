@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #FFDCB6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.toggleBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #0B2447;
+    top: 40px;
+    right: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.calculator {
+    background-color: #9384D1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    height: 500px;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.calculator form input {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: 0;
+    height: 50px;
+    text-align: right;
+}
+
+
+.calculator .buttons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.calculator .btn {
+    border: 0;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculator .btn-equal {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    background-color: #C9A7EB;
+    color: white;
+    border: 0;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.calculator .btn-colored {
+    background-color: #ECC9EE;
+    color: white;
+    transition: 0.5s;
+}
+
+.calculator .btn-clear {
+    background-color: rgba(220, 20, 60, 0.558);
+    color: white;
+    border: 0;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.calculator .btn-del {
+    background-color: #C9A7EB;
+    color: white;
+    border: 0;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dark-mood {
+    background-color: #0B2447;
+}
+.dark-mood .toggleBtn {
+    background-color: white;
+}
+.dark-mood .calculator {
+    background-color: #19376D;
+}
+
+.dark-mood .calculator .btn-colored {
+    background-color: #A5D7E8;
+    color: black;
+}
+.dark-mood .calculator .btn-del {
+    background-color: #576CBC;
+}
+
